@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  html,body{margin:0;padding:0;}
+  .cover{
+    width:3840px; height:2160px; position:relative; overflow:hidden;
+    background:#ffffff url('背景素材.png') center/cover no-repeat;
+    font-family:"Microsoft YaHei","PingFang SC",sans-serif;
+  }
+  .textbar{
+    position:absolute; left:0; right:0; top:0; height:950px;
+    background:linear-gradient(to bottom, rgba(0,0,0,.88), rgba(0,0,0,.04));
+    display:flex; flex-direction:column; justify-content:flex-start;
+    padding:250px 154px 0;
+    box-sizing:border-box;
+    z-index:1;
+  }
+  h1{
+    font-size:158px; font-weight:900; color:#fff; margin:0 0 29px 0;
+    line-height:1.28; text-shadow:0 7px 29px rgba(0,0,0,.5);
+  }
+  h1 .accent{ color:#ffd23d; }
+  .badges{ display:flex; gap:43px; margin-top:14px; }
+  .badge{
+    background:#fff; color:#1a1a1a; font-weight:700; font-size:65px;
+    padding:29px 62px; border-radius:77px;
+    display:flex; align-items:center; gap:19px;
+    box-shadow:0 14px 34px rgba(0,0,0,.22);
+  }
+  .badge.warn{ color:#d92d20; }
+  .tag{
+    position:absolute; top:106px; left:106px; z-index:2;
+    background:linear-gradient(135deg,#ff4d3d,#ff8a3d);
+    color:#fff; font-weight:900; font-size:77px;
+    padding:29px 72px; border-radius:19px 62px 19px 62px;
+    box-shadow:0 19px 43px rgba(0,0,0,.28);
+    transform:rotate(-3deg);
+    border:7px solid #fff;
+    letter-spacing:2px;
+  }
+</style>
+</head>
+<body>
+  <div class="cover">
+    <div class="textbar">
+      <h1>ChatGPT 拼车靠谱吗？<span class="accent"></span></h1>
+      <h1 style="font-size:120px;">个人订阅 vs 合租车 vs <span class="accent">Team 版</span> 全面横评</h1>
+      <div class="badges">
+        <div class="badge">🔒 隐私安全</div>
+        <div class="badge warn">⚠️ 封号风险</div>
+        <div class="badge">💰 成本核算</div>
+      </div>
+    </div>
+    <div class="tag">⚠️ 避坑指南</div>
+  </div>
+</body>
+</html>
